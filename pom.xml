@@ -2,10 +2,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ch.ivyteam.designer</groupId>
 	<artifactId>branding-images</artifactId>
-	<version>11.4.0-SNAPSHOT</version>
+	<version>11.4.0</version>
 	<packaging>pom</packaging>
 
 	<distributionManagement>
+		<repository>
+      		<id>nexus.ivyteam.io</id>
+      		<url>https://nexus.ivyteam.io/repository/maven-releases/</url>
+    	</repository>
 		<snapshotRepository>
 			<id>nexus.ivyteam.io</id>
 			<url>https://nexus.ivyteam.io/repository/maven-snapshots/</url>
