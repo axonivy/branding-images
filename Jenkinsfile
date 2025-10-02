@@ -21,6 +21,9 @@ pipeline {
           maven cmd: "clean ${phase}"
         }
         archiveArtifacts 'target/*.zip'
+        withChecks('Maven Issues') {
+          recordIssues tools: [mavenConsole()], qualityGates: [[threshold: 1, type: 'TOTAL']]
+        }
       }
     }
   }
